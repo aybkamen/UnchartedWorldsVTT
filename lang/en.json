@@ -1,0 +1,22 @@
+{
+  "UNCHARTED.AbilityStr": "Strength",
+  "UNCHARTED.AbilityCon": "Constitution",
+  "UNCHARTED.AbilityDex": "Dexterity",
+  "UNCHARTED.AbilityInt": "Intelligence",
+  "UNCHARTED.AbilityWis": "Wisdom",
+  "UNCHARTED.AbilityCha": "Charisma",
+
+  "UNCHARTED.AbilityStrAbbr": "str",
+  "UNCHARTED.AbilityConAbbr": "con",
+  "UNCHARTED.AbilityDexAbbr": "dex",
+  "UNCHARTED.AbilityIntAbbr": "int",
+  "UNCHARTED.AbilityWisAbbr": "wis",
+  "UNCHARTED.AbilityChaAbbr": "cha",
+
+  "UNCHARTED.EffectCreate": "Create Effect",
+  "UNCHARTED.EffectToggle": "Toggle Effect",
+  "UNCHARTED.EffectEdit": "Edit Effect",
+  "UNCHARTED.EffectDelete": "Delete Effect",
+
+  "UNCHARTED.Add": "Add"
+}
