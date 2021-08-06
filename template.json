@@ -59,7 +59,8 @@
         "description": "",
         "type": "",
         "tags": "",
-        "short": ""
+        "short": "",
+        "class": 0
       },
       "weapon": {
         "ranges": ""
