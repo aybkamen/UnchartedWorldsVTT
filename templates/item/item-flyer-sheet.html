@@ -24,10 +24,10 @@
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
       <div>
-        <p><strong>Melee Weapon Design</strong>: All Class 0 Melee Weapons have the following properties:</p>
+        <p><strong>Flyer Design</strong>: Choose one of the following basic designs for a Class 0 Flyer:</p>
         <ul>
-          <li>Optimal Ranges: Melee.</li>
-          <li>Choose 1 free upgrade (weapon form).</li>
+        <li><strong>Speeder</strong>: Tiny, maneuverable flying vehicle. Space for a pilot and one passenger.</li>
+        <li><strong>Shuttle</strong>: A flying vehicle for up to six people that can hover and take off vertically.</li>
         </ul>
       </div>
       {{!-- As you add new fields, add them in here! --}}
@@ -36,17 +36,17 @@
         <input type="text" name="data.class" value="{{data.class}}" data-dtype="Number"/>
       </div>
       <div class="resource">
+        <label class="resource-label">Type</label>
+        <input type="text" name="data.type" value="{{data.type}}" data-dtype="text"/>
+      </div>
+      <div class="resource">
         <label class="resource-label">Updates</label>
         <input type="text" name="data.updates" value="{{data.updates}}" data-dtype="text"/>
       </div>
       <div class="resource">
         <label class="resource-label">Short</label>
         <input type="text" name="data.short" value="{{data.short}}" data-dtype="text"/>
-      </div>
-      <div class="resource">
-        <label class="resource-label">Range</label>
-        <input type="text" name="data.ranges" value="{{data.ranges}}" data-dtype="text"/>
-      </div>
+      </div>   
       
     </div>
   </section>
