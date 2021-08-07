@@ -6,6 +6,19 @@
     <div class="header-fields">
       <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
 
+      <div class="resources grid grid-3col">
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="data.attributes.origin" value="{{data.attributes.origin}}" placeholder="..Origin"/>
+        </div>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="data.attributes.career1" value="{{data.attributes.career1}}" placeholder="..Career"/>
+        </div>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="data.attributes.career2" value="{{data.attributes.career2}}" placeholder="..Career"/>
+        </div>
+      
+      </div>
+
       <div class="resources grid grid-5col">
         {{#each data.abilities as |ability key|}}
         <div class="resource flex-group-center">
@@ -24,8 +37,10 @@
     {{!-- Default tab is specified in actor-sheet.mjs --}}
     <a class="item" data-tab="skills">Skills</a>
     <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="items">Items</a>
-    <a class="item" data-tab="spells">Spells</a>
+    <a class="item" data-tab="assets">Assets</a>
+    <a class="item" data-tab="combat">Combat</a>
+    <a class="item" data-tab="factions">Factions</a>
+    <a class="item" data-tab="advancement">Advancement</a>
     <a class="item" data-tab="effects">Effects</a>
   </nav>
 
@@ -50,14 +65,24 @@
       {{editor content=data.biography target="data.biography" rollData=rollData button=true owner=owner editable=editable}}
     </div>
 
-    {{!-- Owned Items Tab --}}
-    <div class="tab items" data-group="primary" data-tab="items">
+    {{!-- Owned Assets Tab --}}
+    <div class="tab items" data-group="primary" data-tab="assets">
        {{> "systems/uncharted/templates/actor/parts/actor-items.html"}}
     </div>
 
-    {{!-- Owned Spells Tab --}}
-    <div class="tab spells" data-group="primary" data-tab="spells">
+    {{!-- Combat Tab --}}
+    <div class="tab spells" data-group="primary" data-tab="combat">
       {{> "systems/uncharted/templates/actor/parts/actor-spells.html"}}
+    </div>
+
+    {{!-- Advancement Tab --}}
+    <div class="tab spells" data-group="primary" data-tab="advancement">
+      ...Not Yet!
+    </div>
+
+    {{!-- Factions Tab --}}
+    <div class="tab factions" data-group="primary" data-tab="factions">
+      ...Not Yet!
     </div>
 
     {{!-- Active Effects Tab --}}
