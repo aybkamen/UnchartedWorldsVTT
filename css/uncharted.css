@@ -449,6 +449,13 @@
   padding: 0 8px;
 }
 
+.uncharted .item-description {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 300px;
+  flex: 0 0 300px;
+  padding: 0 8px;
+}
+
 .uncharted .effects .item .effect-source,
 .uncharted .effects .item .effect-duration,
 .uncharted .effects .item .effect-controls {
