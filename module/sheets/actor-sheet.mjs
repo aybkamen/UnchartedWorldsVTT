@@ -97,6 +97,11 @@ export class UnchartedActorSheet extends ActorSheet {
       8: [],
       9: []
     };
+    const assets = {
+      "melee":[],
+      "firearms":[]
+    };
+    const weapons = [];
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
@@ -118,6 +123,13 @@ export class UnchartedActorSheet extends ActorSheet {
       // Append to melee Weapons
       else if (i.type === 'melee') {
         melee_wep.push(i);
+        assets["melee"].push(i);
+        weapons.push(i);
+      }
+      // Append to Firearms
+      else if (i.type === 'firearm') {
+        assets["firearms"].push(i);
+        weapons.push(i);
       }
     }
 
@@ -126,6 +138,8 @@ export class UnchartedActorSheet extends ActorSheet {
     context.skills = skills;
     context.spells = spells;
     context.melee_wep = melee_wep;
+    context.assets = assets;
+    context.weapons = weapons;
    }
 
   /* -------------------------------------------- */
