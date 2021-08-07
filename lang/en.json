@@ -1,10 +1,9 @@
 {
-  "UNCHARTED.AbilityStr": "Strength",
-  "UNCHARTED.AbilityCon": "Constitution",
-  "UNCHARTED.AbilityDex": "Dexterity",
-  "UNCHARTED.AbilityInt": "Intelligence",
-  "UNCHARTED.AbilityWis": "Wisdom",
-  "UNCHARTED.AbilityCha": "Charisma",
+  "UNCHARTED.AbilityMettle": "Mettle",
+  "UNCHARTED.AbilityPhysique": "Physique",
+  "UNCHARTED.AbilityExpertise": "Expertise",
+  "UNCHARTED.AbilityInfluence": "Influence",
+  "UNCHARTED.AbilityInterface": "Interface",
 
   "UNCHARTED.AbilityStrAbbr": "str",
   "UNCHARTED.AbilityConAbbr": "con",

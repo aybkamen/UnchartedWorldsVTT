@@ -21,27 +21,38 @@
       "attributes": {
         "level": {
           "value": 1
-        }
+        },
+        "armor": {
+          "value": 0
+        },
+        "advancement": "",
+        "origin": "",
+        "career1": "",
+        "career2": ""
       },
       "abilities": {
-        "str": {
-          "value": 10
+        "mettle": {
+          "value": 0
         },
-        "dex": {
-          "value": 10
+        "physique": {
+          "value": 0
         },
-        "con": {
-          "value": 10
+        "expertise": {
+          "value": 0
         },
-        "int": {
-          "value": 10
+        "influence": {
+          "value": 0
         },
-        "wis": {
-          "value": 10
-        },
-        "cha": {
-          "value": 10
+        "interface": {
+          "value": 0
         }
+      },
+      "injuries": {
+        "minor": "",
+        "major": "",
+        "severe": "",
+        "critical": "",
+        "fatal": ""
       }
     },
     "npc": {

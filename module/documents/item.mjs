@@ -36,7 +36,7 @@ export class UnchartedItem extends Item {
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get('core', 'rollMode');
-    const label = `[${item.type}] ${item.name}`;
+    const label = `[${item.type}] <h1> ${item.name} </h1>`;
 
     // If there's no roll data, send a chat message.
     if (!this.data.data.formula) {

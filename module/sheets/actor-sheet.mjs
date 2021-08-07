@@ -13,7 +13,7 @@ export class UnchartedActorSheet extends ActorSheet {
       template: "systems/uncharted/templates/actor/actor-sheet.html",
       width: 600,
       height: 600,
-      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
+      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }]
     });
   }
 
@@ -82,8 +82,9 @@ export class UnchartedActorSheet extends ActorSheet {
    */
   _prepareItems(context) {
     // Initialize containers.
+    const melee_wep = [];
     const gear = [];
-    const features = [];
+    const skills = [];
     const spells = {
       0: [],
       1: [],
@@ -104,9 +105,9 @@ export class UnchartedActorSheet extends ActorSheet {
       if (i.type === 'item') {
         gear.push(i);
       }
-      // Append to features.
-      else if (i.type === 'feature') {
-        features.push(i);
+      // Append to skills.
+      else if (i.type === 'skill') {
+        skills.push(i);
       }
       // Append to spells.
       else if (i.type === 'spell') {
@@ -114,12 +115,17 @@ export class UnchartedActorSheet extends ActorSheet {
           spells[i.data.spellLevel].push(i);
         }
       }
+      // Append to melee Weapons
+      else if (i.type === 'melee') {
+        melee_wep.push(i);
+      }
     }
 
     // Assign and return
     context.gear = gear;
-    context.features = features;
+    context.skills = skills;
     context.spells = spells;
+    context.melee_wep = melee_wep;
    }
 
   /* -------------------------------------------- */

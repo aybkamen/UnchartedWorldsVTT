@@ -7,7 +7,7 @@
   return loadTemplates([
 
     // Actor partials.
-    "systems/uncharted/templates/actor/parts/actor-features.html",
+    "systems/uncharted/templates/actor/parts/actor-skills.html",
     "systems/uncharted/templates/actor/parts/actor-items.html",
     "systems/uncharted/templates/actor/parts/actor-spells.html",
     "systems/uncharted/templates/actor/parts/actor-effects.html",

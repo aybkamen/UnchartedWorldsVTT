@@ -5,12 +5,11 @@ export const UNCHARTED = {};
  * @type {Object}
  */
  UNCHARTED.abilities = {
-  "str": "UNCHARTED.AbilityStr",
-  "dex": "UNCHARTED.AbilityDex",
-  "con": "UNCHARTED.AbilityCon",
-  "int": "UNCHARTED.AbilityInt",
-  "wis": "UNCHARTED.AbilityWis",
-  "cha": "UNCHARTED.AbilityCha"
+  "mettle": "UNCHARTED.AbilityMettle",
+  "physique": "UNCHARTED.AbilityPhysique",
+  "expertise": "UNCHARTED.AbilityExpertise",
+  "influence": "UNCHARTED.AbilityInfluence",
+  "interface": "UNCHARTED.AbilityInterface"
 };
 
 UNCHARTED.abilityAbbreviations = {
