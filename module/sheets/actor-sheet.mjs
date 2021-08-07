@@ -82,21 +82,7 @@ export class UnchartedActorSheet extends ActorSheet {
    */
   _prepareItems(context) {
     // Initialize containers.
-    const melee_wep = [];
-    const gear = [];
     const skills = [];
-    const spells = {
-      0: [],
-      1: [],
-      2: [],
-      3: [],
-      4: [],
-      5: [],
-      6: [],
-      7: [],
-      8: [],
-      9: []
-    };
     const assets = {
       "melee":[],
       "firearms":[]
@@ -106,23 +92,13 @@ export class UnchartedActorSheet extends ActorSheet {
     // Iterate through items, allocating to containers
     for (let i of context.items) {
       i.img = i.img || DEFAULT_TOKEN;
-      // Append to gear.
-      if (i.type === 'item') {
-        gear.push(i);
-      }
+
       // Append to skills.
-      else if (i.type === 'skill') {
+      if (i.type === 'skill') {
         skills.push(i);
-      }
-      // Append to spells.
-      else if (i.type === 'spell') {
-        if (i.data.spellLevel != undefined) {
-          spells[i.data.spellLevel].push(i);
-        }
       }
       // Append to melee Weapons
       else if (i.type === 'melee') {
-        melee_wep.push(i);
         assets["melee"].push(i);
         weapons.push(i);
       }
@@ -134,10 +110,7 @@ export class UnchartedActorSheet extends ActorSheet {
     }
 
     // Assign and return
-    context.gear = gear;
     context.skills = skills;
-    context.spells = spells;
-    context.melee_wep = melee_wep;
     context.assets = assets;
     context.weapons = weapons;
    }
