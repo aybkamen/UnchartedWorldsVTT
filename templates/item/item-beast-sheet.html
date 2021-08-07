@@ -24,10 +24,10 @@
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
       <div>
-        <p><strong>Melee Weapon Design</strong>: All Class 0 Melee Weapons have the following properties:</p>
+        <p><strong>Beast Design</strong>: Choose one of the following basic designs for a Class 0 Beast:</p>
         <ul>
-          <li>Optimal Ranges: Melee.</li>
-          <li>Choose 1 free upgrade (weapon form).</li>
+        <li><strong>Natural Weapon</strong>: Choose a Melee Weapon upgrade. The beast uses that as a natural weapon to hunt or defend themselves. Can be Commanded to attack.</li>
+        <li><strong>Natural Locomotion</strong>: Choose a means of locomotion for the beast (slithering, leaping, climbing, swimming, gliding, hovering, flying).</li>
         </ul>
       </div>
       {{!-- As you add new fields, add them in here! --}}
@@ -36,17 +36,17 @@
         <input type="text" name="data.class" value="{{data.class}}" data-dtype="Number"/>
       </div>
       <div class="resource">
+        <label class="resource-label">Type</label>
+        <input type="text" name="data.type" value="{{data.type}}" data-dtype="text"/>
+      </div>
+      <div class="resource">
         <label class="resource-label">Updates</label>
         <input type="text" name="data.updates" value="{{data.updates}}" data-dtype="text"/>
       </div>
       <div class="resource">
         <label class="resource-label">Short</label>
         <input type="text" name="data.short" value="{{data.short}}" data-dtype="text"/>
-      </div>
-      <div class="resource">
-        <label class="resource-label">Range</label>
-        <input type="text" name="data.ranges" value="{{data.ranges}}" data-dtype="text"/>
-      </div>
+      </div>   
       
     </div>
   </section>

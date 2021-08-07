@@ -24,10 +24,13 @@
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
       <div>
-        <p><strong>Melee Weapon Design</strong>: All Class 0 Melee Weapons have the following properties:</p>
+        <p><strong>Crew Design</strong>: Choose one of the following basic designs for a Class 0 Crew:</p>
         <ul>
-          <li>Optimal Ranges: Melee.</li>
-          <li>Choose 1 free upgrade (weapon form).</li>
+        <li><strong>Squad</strong>: Disciplined and stolid. Equipped with a similar type of weaponry (pistols, stun batons, rifles, etc.). Able to guard areas and engage in small-scale combat.</li>
+        <li><strong>Techs</strong>: Educated and well trained. Equipped with basic tools. Able to provide technical or manual assistance to a variety of scientific or engineering projects.</li>
+        <li><strong>Gang</strong>: Crude and self-reliant. Equipped with a smattering of mismatched weaponry (pistols, shotguns, chains, knives, etc.). Able to attack people or break things.</li>
+        <li><strong>Staff</strong>: Refined and professional. Able to serve guests, keep accounts, prepare meals and perform daily household chores.</li>
+        <li><strong>Artificial</strong> (new design): Choose form (robot, undead, golem, spirit, etc.). Obedient, but rarely takes initiative or acts on their own. Commanded with +Interface.</li>
         </ul>
       </div>
       {{!-- As you add new fields, add them in here! --}}
@@ -36,17 +39,17 @@
         <input type="text" name="data.class" value="{{data.class}}" data-dtype="Number"/>
       </div>
       <div class="resource">
+        <label class="resource-label">Type</label>
+        <input type="text" name="data.type" value="{{data.type}}" data-dtype="text"/>
+      </div>
+      <div class="resource">
         <label class="resource-label">Updates</label>
         <input type="text" name="data.updates" value="{{data.updates}}" data-dtype="text"/>
       </div>
       <div class="resource">
         <label class="resource-label">Short</label>
         <input type="text" name="data.short" value="{{data.short}}" data-dtype="text"/>
-      </div>
-      <div class="resource">
-        <label class="resource-label">Range</label>
-        <input type="text" name="data.ranges" value="{{data.ranges}}" data-dtype="text"/>
-      </div>
+      </div>  
       
     </div>
   </section>
