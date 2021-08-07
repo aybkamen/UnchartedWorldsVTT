@@ -24,16 +24,21 @@
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
       <div>
-        <p><strong>Melee Weapon Design</strong>: All Class 0 Melee Weapons have the following properties:</p>
+        <p><strong>Heavy Weapon Design</strong>: All Class 0 Heavy Weapons have the following properties:</p>
         <ul>
-          <li>Optimal Ranges: Melee.</li>
-          <li>Choose 1 free upgrade (weapon form).</li>
+        <li><strong>Two-handed ranged weapon</strong>. Optimal Range: Far, Distant.</li>
+        <li><strong>Destructive</strong> Causes property damage, damages machinery and vehicles.</li>
+        <li><strong>Clumsy</strong>: Heavy and awkward, forces Face Adversity on physical activity while carrying it.</li>
         </ul>
       </div>
       {{!-- As you add new fields, add them in here! --}}
       <div class="resource">
         <label class="resource-label">Class</label>
         <input type="text" name="data.class" value="{{data.class}}" data-dtype="Number"/>
+      </div>
+      <div class="resource">
+        <label class="resource-label">Type</label>
+        <input type="text" name="data.type" value="{{data.type}}" data-dtype="text"/>
       </div>
       <div class="resource">
         <label class="resource-label">Updates</label>

@@ -85,7 +85,16 @@ export class UnchartedActorSheet extends ActorSheet {
     const skills = [];
     const assets = {
       "melee":[],
-      "firearms":[]
+      "firearms":[],
+      "heavy":[],
+      "explosive":[],
+      "attire":[],
+      "mod":[],
+      "vehicle":[],
+      "flyer":[],
+      "crew":[],
+      "beast":[],
+      "kit":[]
     };
     const weapons = [];
 
@@ -106,6 +115,44 @@ export class UnchartedActorSheet extends ActorSheet {
       else if (i.type === 'firearm') {
         assets["firearms"].push(i);
         weapons.push(i);
+      }
+      // Append to Heavy Weapons
+      else if (i.type === 'heavy') {
+        assets["heavy"].push(i);
+        weapons.push(i);
+      }
+      // Append to Explosive
+      else if (i.type === 'explosive') {
+        assets["explosive"].push(i);
+        weapons.push(i);
+      }
+      // Append to Attire
+      else if (i.type === 'attire') {
+        assets["attire"].push(i);
+      }
+      // Append to Mod
+      else if (i.type === 'mod') {
+        assets["mod"].push(i);
+      }
+      // Append to Vehicle
+      else if (i.type === 'vehicle') {
+        assets["vehicle"].push(i);
+      }
+      // Append to Flyer
+      else if (i.type === 'flyer') {
+        assets["flyer"].push(i);
+      }
+      // Append to crew
+      else if (i.type === 'crew') {
+        assets["crew"].push(i);
+      }
+      // Append to beast
+      else if (i.type === 'beast') {
+        assets["beast"].push(i);
+      }
+      // Append to kit
+      else if (i.type === 'kit') {
+        assets["kit"].push(i);
       }
     }
 
