@@ -24,16 +24,36 @@
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
       <div>
-        <p><strong>Melee Weapon Design</strong>: All Class 0 Melee Weapons have the following properties:</p>
+        <p><strong>Explosive Design</strong>: Choose one of the following basic designs for a Class 0 Explosive:</p>
         <ul>
-          <li>Optimal Ranges: Melee.</li>
-          <li>Choose 1 free upgrade (weapon form).</li>
+        <li><strong>Grenade</strong> (One-handed thrown explosive. Optimal Range: Close)
+        <ul>
+        <li><em>Timed:</em> Explodes after fixed time.</li>
+        </ul>
+        </li>
+        <li><strong>Charge</strong> (Two-handed placed explosive. Optimal Range: Melee)
+        <ul>
+        <li><em>Triggered</em>: Explodes when conditions are met (signal, proximity, etc.)</li>
+        <li><em>Destructive</em>: Causes property damage. Damages machinery, vehicles.</li>
+        </ul>
+        </li>
+        <li><strong>Missile</strong>&nbsp; (Launched. Optimal Range: Distant, Very Distant)
+        <ul>
+        <li><em>Massive</em>: Must be dropped from a vehicle or launched from artillery.</li>
+        <li><em>Impact</em>: Explodes when it collides with a solid object.</li>
+        <li><em>Destructive</em>: Causes property damage. Damages machinery, vehicles.</li>
+        </ul>
+        </li>
         </ul>
       </div>
       {{!-- As you add new fields, add them in here! --}}
       <div class="resource">
         <label class="resource-label">Class</label>
         <input type="text" name="data.class" value="{{data.class}}" data-dtype="Number"/>
+      </div>
+      <div class="resource">
+        <label class="resource-label">Type</label>
+        <input type="text" name="data.type" value="{{data.type}}" data-dtype="text"/>
       </div>
       <div class="resource">
         <label class="resource-label">Updates</label>
